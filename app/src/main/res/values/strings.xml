@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Thai Recipes</string>
+    <string name="title_name_main">สูตรอาหารไทย</string>
+    <string name="title_image">รูปปก</string>
+    <string name="main_button">อาหาร</string>
+    <string name="dess_button">ขนมหวาน</string>
+    <string name="title_name_dess">สูตรขนมไทย</string>
 </resources>

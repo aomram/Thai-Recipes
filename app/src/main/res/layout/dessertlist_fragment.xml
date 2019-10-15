@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nameDess_text"
+        style="@style/Name_App"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_name_dess" />
+
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="match_parent"
+        android:layout_height="276dp"
+        android:contentDescription="@string/title_image"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ปกขนม" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/MenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/main_button" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/MenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dess_button" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d9e1e8" />
+
+</LinearLayout>
