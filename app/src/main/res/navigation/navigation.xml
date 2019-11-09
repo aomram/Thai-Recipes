@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/maincoursesList_Fragment">
+
+    <fragment
+        android:id="@+id/maincoursesList_Fragment"
+        android:name="buu.informatics.s59160975.thairecipes.MaincoursesListFragment"
+        android:label="fragment_maincourses_list"
+        tools:layout="@layout/fragment_maincourses_list" >
+        <action
+            android:id="@+id/action_maincoursesList_Fragment_to_dessertList_Fragment"
+            app:destination="@id/dessertList_Fragment" />
+        <action
+            android:id="@+id/action_maincoursesList_Fragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_maincoursesList_Fragment_to_maincourses_Fragment"
+            app:destination="@id/maincourses_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dessertList_Fragment"
+        android:name="buu.informatics.s59160975.thairecipes.DessertListFragment"
+        android:label="fragment_dessert_list"
+        tools:layout="@layout/fragment_dessert_list" >
+        <action
+            android:id="@+id/action_dessertList_Fragment_to_maincoursesList_Fragment"
+            app:destination="@id/maincoursesList_Fragment" />
+        <action
+            android:id="@+id/action_dessertList_Fragment_to_dessert_Fragment"
+            app:destination="@id/dessert_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dessert_Fragment"
+        android:name="buu.informatics.s59160975.thairecipes.Dessert_Fragment"
+        android:label="fragment_dessert"
+        tools:layout="@layout/fragment_dessert" >
+        <action
+            android:id="@+id/action_dessert_Fragment_to_dessertList_Fragment"
+            app:destination="@id/dessertList_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/maincourses_Fragment"
+        android:name="buu.informatics.s59160975.thairecipes.Maincourses_Fragment"
+        android:label="fragment_maincourses"
+        tools:layout="@layout/fragment_maincourses" >
+        <action
+            android:id="@+id/action_maincourses_Fragment_to_maincoursesList_Fragment"
+            app:destination="@id/maincoursesList_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="buu.informatics.s59160975.thairecipes.About_Fragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_maincoursesList_Fragment"
+            app:destination="@id/maincoursesList_Fragment" />
+    </fragment>
+</navigation>

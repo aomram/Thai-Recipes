@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nameMain_text"
+            style="@style/Name_App"
+            android:background="#3c3f41"
+            android:text="@string/title_name_main" />
+
+        <Button
+            android:id="@+id/about_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_button" />
+
+        <ImageView
+            android:id="@+id/title_image"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:contentDescription="@string/title_image"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/main_button"
+                style="@style/MenuButton"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:text="@string/main_button" />
+
+            <Button
+                android:id="@+id/dess_button"
+                style="@style/MenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dess_button" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/DessMenu_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFCECACA" />
+
+    </LinearLayout>
+</layout>
