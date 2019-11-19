@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/dessert_Fragment"
-        android:name="buu.informatics.s59160975.thairecipes.Dessert_Fragment"
+        android:name="buu.informatics.s59160975.thairecipes.DessertFragment"
         android:label="fragment_dessert"
         tools:layout="@layout/fragment_dessert" >
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/maincourses_Fragment"
-        android:name="buu.informatics.s59160975.thairecipes.Maincourses_Fragment"
+        android:name="buu.informatics.s59160975.thairecipes.MaincoursesFragment"
         android:label="fragment_maincourses"
         tools:layout="@layout/fragment_maincourses" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="buu.informatics.s59160975.thairecipes.About_Fragment"
+        android:name="buu.informatics.s59160975.thairecipes.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" >
         <action

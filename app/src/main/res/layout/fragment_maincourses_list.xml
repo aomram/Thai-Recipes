@@ -12,12 +12,6 @@
             android:background="#3c3f41"
             android:text="@string/title_name_main" />
 
-        <Button
-            android:id="@+id/about_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/about_button" />
-
         <ImageView
             android:id="@+id/title_image"
             android:layout_width="match_parent"
