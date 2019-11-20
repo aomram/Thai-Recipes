@@ -8,25 +8,37 @@
 
 
         <TextView
-            android:id="@+id/nameDessert_text"
+            android:id="@+id/nameMenu_text"
             style="@style/Name_App"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/main_name" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/menu_image"
             android:layout_width="match_parent"
             android:layout_height="276dp"
             android:contentDescription="@string/main_image"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/chucurry" />
 
-        <TextView
-            android:id="@+id/recipe_main"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#FFCECACA"
-            android:text="@string/recipe_main" />
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/detail_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFCECACA"
+                    android:text="@string/recipe_main" />
+            </LinearLayout>
+        </ScrollView>
+
     </LinearLayout>
 </layout>

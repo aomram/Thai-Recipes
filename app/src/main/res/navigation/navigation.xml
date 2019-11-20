@@ -40,6 +40,15 @@
         <action
             android:id="@+id/action_dessert_Fragment_to_dessertList_Fragment"
             app:destination="@id/dessertList_Fragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+        <argument
+            android:name="detail"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/maincourses_Fragment"
@@ -49,6 +58,15 @@
         <action
             android:id="@+id/action_maincourses_Fragment_to_maincoursesList_Fragment"
             app:destination="@id/maincoursesList_Fragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="Image"
+            app:argType="string" />
+        <argument
+            android:name="detail"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"

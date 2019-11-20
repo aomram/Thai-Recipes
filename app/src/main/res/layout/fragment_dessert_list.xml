@@ -15,7 +15,7 @@
         <ImageView
             android:id="@+id/title_image"
             android:layout_width="match_parent"
-            android:layout_height="276dp"
+            android:layout_height="230dp"
             android:contentDescription="@string/title_image"
             android:cropToPadding="false"
             android:scaleType="fitXY"
@@ -44,12 +44,11 @@
 
         </LinearLayout>
 
-        <ListView
-            android:id="@+id/MainMenu_list"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#CECACA" />
+            android:layout_weight="1" />
 
     </LinearLayout>
 </layout>

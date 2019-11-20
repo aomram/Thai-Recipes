@@ -46,4 +46,5 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
     implementation 'com.google.android.material:material:<version>'
     implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
